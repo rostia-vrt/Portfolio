@@ -1,7 +1,6 @@
 @import url(reset.css);
 
 #home {
-    position: relative;
     width: 100%;
     height: 800px;
     background-image: url(/Portfolio/images/img1.jpg);
@@ -9,21 +8,22 @@
     background-size: 100%;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    font-family: 'Russo One', sans-serif;
 }
 .navBox{
     display: flex;
     width: 100%;
     height: 80px;
     position: sticky;
-    top: 0px;
+    top: 0;
     justify-content: center;
-    z-index: 9999;
+    z-index: 50000000;
 }
 .navMenu{
-    position: sticky;
+    
     display: flex;
     width: 50%;
-    z-index: 9999;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.432);
 }
@@ -69,7 +69,34 @@ a:hover {
     font-size: 50px;
     font-weight: bold;
 }
-.cv {
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 800px;
+    height: 830px;
+    font-family: 'Russo One', sans-serif;
+}
+.information {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profession{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 10px 10px 10px 10px black ;
+    font-weight: bold;
+}
+.myPhoto {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 50%;
 }
