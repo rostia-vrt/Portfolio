@@ -10,7 +10,7 @@
     flex-direction: column;
     border-bottom: 1px solid black;
     font-family: 'Russo One', sans-serif;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 50px black;
 }
 .navBox{
     display: flex;
@@ -102,8 +102,8 @@ a:hover {
     width: 400px;
     height: 500px;
     border: 1px solid black;
-    border-radius: 50%;
-    box-shadow: 0 0 20px black;
+    border-radius: 25%;
+    box-shadow: 0 0 10px black;
 }
 .whoIam {
     margin-top: 30px;
@@ -139,7 +139,7 @@ a:hover {
 }
 .hardSkillsBox{
     margin-top: 50px;
-    width: 80%;
+    width: 70%;
     min-height: 300px;
 }
 .hardSkills {
@@ -147,15 +147,46 @@ a:hover {
     font-size: 50px;
 }
 .skillsListBox{
+    margin-top: 30px;
     width: 100%;
     min-height: 300px;
     display: flex;
+    justify-content: space-between;
 }
-.leftskillsBox{
-    width: 50%;
+.leftSkillsBox{
+    width: 30%;
     min-height: 300px;
 }
-.rightskillsBox{
-    width: 50%;
+.rightSkillsBox{
+    width: 30%;
     min-height: 300px;
+}
+.Skills{
+    display: flex;
+    width: 100%;
+    height: 64px;
+}
+.softSkillsBox{
+    margin-top: 50px;
+    width: 70%;
+    min-height: 300px;
+}
+.container{
+    margin-top: 50px;
+    width: 70%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.educationBox{
+    width: 40%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.languages {
+    width: 40%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
 }
