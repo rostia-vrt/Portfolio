@@ -3,13 +3,14 @@
 #home {
     width: 100%;
     height: 800px;
-    background-image: url(/Portfolio/images/img1.jpg);
+    background-image: url(/images/img1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
     font-family: 'Russo One', sans-serif;
+    box-shadow: 0 0 20px black;
 }
 .navBox{
     display: flex;
@@ -75,28 +76,86 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 830px;
+    min-height: 830px;
     font-family: 'Russo One', sans-serif;
+    background-color: rgba(204, 204, 204, 0.432);
 }
 .information {
+    margin-top: 100px;
     width: 70%;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.profession{
+.name{
     width: 50%;
     height: 100px;
     text-align: center;
     font-size: 60px;
-    text-shadow: 10px 10px 10px 10px black ;
+    text-shadow: 0px 0px 0px 10px black ;
     font-weight: bold;
 }
 .myPhoto {
+    margin-top: 30px;
     width: 400px;
     height: 500px;
     border: 1px solid black;
     border-radius: 50%;
+    box-shadow: 0 0 20px black;
+}
+.whoIam {
+    margin-top: 30px;
+    width: 70%;
+    min-height: 300px;
+    display: flex;
+}
+.leftBox{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sayHello{
+    text-align: right;
+    font-size: 25px;
+}
+.rightBox{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.socialBox{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.socialImg{
+    width: 45px; 
+    height: 45px; 
+}
+.hardSkillsBox{
+    margin-top: 50px;
+    width: 80%;
+    min-height: 300px;
+}
+.hardSkills {
+    text-align: center;
+    font-size: 50px;
+}
+.skillsListBox{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+}
+.leftskillsBox{
+    width: 50%;
+    min-height: 300px;
+}
+.rightskillsBox{
+    width: 50%;
+    min-height: 300px;
 }
