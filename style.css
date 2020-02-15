@@ -12,22 +12,25 @@
     font-family: 'Russo One', sans-serif;
     box-shadow: 0 0 50px black;
 }
-.navBox{
+
+.navBox {
     display: flex;
     width: 100%;
     height: 80px;
-    position: sticky;
+    position: absolute;
     top: 0;
     justify-content: center;
     z-index: 50000000;
 }
-.navMenu{
-    
+
+.navMenu {
+
     display: flex;
     width: 50%;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.432);
 }
+
 a {
     text-align: center;
     width: 25%;
@@ -36,19 +39,22 @@ a {
     font-size: 30px;
     padding-top: 20px;
 }
+
 a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
 .mainTextBox {
     position: absolute;
     top: 100px;
     height: 500px;
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-.mainText{
+
+.mainText {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -56,20 +62,23 @@ a:hover {
     background-color: rgba(128, 128, 128, 0.432);
     border-radius: 100px;
 }
-.myName{
+
+.myName {
     margin-top: 200px;
     text-align: center;
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
-.myProfession{
+
+.myProfession {
     top: 300px;
     text-align: center;
     color: white;
     font-size: 50px;
     font-weight: bold;
 }
+
 .aboutMe {
     display: flex;
     flex-direction: column;
@@ -81,6 +90,7 @@ a:hover {
     box-shadow: 0 0 30px rgba(71, 71, 71, 0.432);
     background-color: rgba(204, 204, 204, 0.432);
 }
+
 .information {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -93,15 +103,17 @@ a:hover {
     box-shadow: 0 0 10px black;
     border-radius: 20px;
 }
-.name{
+
+.name {
     margin-top: 20px;
     width: 50%;
     height: 100px;
     text-align: center;
     font-size: 60px;
-    text-shadow: 0px 0px 0px 10px black ;
+    text-shadow: 0px 0px 0px 10px black;
     font-weight: bold;
 }
+
 .myPhoto {
     margin-top: 30px;
     width: 30%;
@@ -109,85 +121,101 @@ a:hover {
     border-radius: 25%;
     box-shadow: 0 0 10px black;
 }
+
 .whoIam {
     margin-top: 30px;
     width: 70%;
     min-height: 300px;
     display: flex;
 }
-.leftBox{
+
+.leftBox {
     width: 50%;
     height: 300px;
     display: flex;
     flex-direction: column;
-    
+
 }
-.sayHello{
+
+.sayHello {
     text-align: right;
     font-size: 25px;
 }
-.rightBox{
+
+.rightBox {
     width: 50%;
     height: 300px;
     display: flex;
     flex-direction: column;
 }
-.socialBox{
+
+.socialBox {
     width: 100%;
     height: 50px;
     display: flex;
 }
-.socialImg{
-    width: 45px; 
-    height: 45px; 
+
+.socialImg {
+    width: 45px;
+    height: 45px;
 }
-.hardSkillsBox{
+
+.hardSkillsBox {
     margin-top: 50px;
     width: 70%;
     min-height: 300px;
 }
+
 .hardSkills {
     text-align: center;
     font-size: 50px;
 }
-.skillsListBox{
+
+.skillsListBox {
     margin-top: 30px;
     width: 100%;
     min-height: 300px;
     display: flex;
     justify-content: space-between;
 }
-.leftSkillsBox{
+
+.leftSkillsBox {
     width: 30%;
     min-height: 300px;
 }
-.rightSkillsBox{
+
+.rightSkillsBox {
     width: 30%;
     min-height: 300px;
 }
-.Skills{
+
+.Skills {
     display: flex;
     width: 100%;
     height: 64px;
 }
-.softSkillsBox{
+
+.softSkillsBox {
     margin-top: 50px;
     width: 70%;
     min-height: 300px;
 }
-.container{
+
+.container {
     margin-top: 50px;
     width: 70%;
     min-height: 300px;
     display: flex;
     justify-content: space-between;
 }
-.educationBox{
+
+.educationBox {
     width: 40%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
 }
+
 .languages {
     width: 40%;
     min-height: 300px;
@@ -195,67 +223,173 @@ a:hover {
     flex-direction: column;
 }
 
-.portfolioBlock{
+.portfolioBlock {
     min-height: 830px;
     font-family: 'Russo One', sans-serif;
 }
 
-.myWorks{
+.myWorks {
     margin-top: 100px;
     font-size: 50px;
     text-align: center;
 }
 
-.myWorksContainer{
+.myWorksContainer {
     margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.box{
+
+.box {
     margin-top: 50px;
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-.box1{
+
+.box1 {
     width: 46%;
     border: 1px solid gray;
     transition: 0.5s;
     border-radius: 5px;
     position: relative;
 }
+
 .box1 img {
     max-width: 100%;
     border-radius: 5px;
     z-index: 12;
 }
+
 .box1:hover {
     cursor: pointer;
     transform: translateY(-10px);
     transition: 0.5s;
     box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 1);
-  }
-  .mw{
+}
+
+.mw {
     display: block;
     position: absolute;
     width: 100%;
     z-index: 400000;
-  }
-  .box2{
-      width: 35%;
-      display: flex;
-      align-items: center;
-  }
-  .aboutWork{
-      font-size: 30px;
+}
+
+.box2 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutWork {
+    font-size: 30px;
+}
+
+footer {
+    margin-top: 100px;
+    min-height: 200px;
+    background-color: rgba(204, 204, 204, 0.432);
+    box-shadow: 0 0 30px rgba(71, 71, 71, 0.432);
+    font-family: 'Russo One', sans-serif;
+}
+
+.contactMe {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+.madeBy {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+#topBtn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    outline: none;
   }
 
-  footer{
-      margin-top: 100px;
-      min-height: 200px;
-      background-color: rgba(204, 204, 204, 0.432);
-      box-shadow: 0 0 30px rgba(71, 71, 71, 0.432);
-  }
+/*Social buttons*/
 
- 
+.socialButtons {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ul li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fa {
+    color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fa {
+    color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fa {
+    color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fa {
+    color: #007bb6;
+}
+
+ul li:nth-child(5) a:hover .fa {
+    color: #e4405f;
+}

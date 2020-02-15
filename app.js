@@ -1,11 +1,23 @@
-window.alert = function() {};
-var defaultCSS = document.getElementById('bootstrap-css');
+$(document).ready(function () {
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+            $('#topBtn').fadeIn();
+        } else {
+            $('#topBtn').fadeOut();
+        }
+    });
+    $('#topBtn').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800)
+    });
 
-function changeCSS(css) {
-  if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
-  else $('head > link').filter(':first').replaceWith(defaultCSS);
-}
-$(document).ready(function() {
-  var iframe_height = parseInt($('html').height());
-  window.parent.postMessage(iframe_height, 'http://bootsnipp.com');
+   
+    $('#topBtn').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800)
+    });
 });
+
