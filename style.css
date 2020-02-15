@@ -78,18 +78,23 @@ a:hover {
     width: 100%;
     min-height: 830px;
     font-family: 'Russo One', sans-serif;
+    box-shadow: 0 0 30px rgba(71, 71, 71, 0.432);
     background-color: rgba(204, 204, 204, 0.432);
 }
 .information {
     margin-top: 100px;
+    margin-bottom: 100px;
     width: 70%;
     min-height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
 }
 .name{
+    margin-top: 20px;
     width: 50%;
     height: 100px;
     text-align: center;
@@ -190,3 +195,59 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+
+.portfolioBlock{
+    min-height: 830px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.myWorks{
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.myWorksContainer{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    width: 46%;
+    border: 1px solid gray;
+    transition: 0.5s;
+    border-radius: 5px;
+    position: relative;
+}
+.box1 img {
+    max-width: 100%;
+    border-radius: 5px;
+    z-index: 12;
+}
+.box1:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 1);
+  }
+  .mw{
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 400000;
+  }
+  .box2{
+      width: 35%;
+      display: flex;
+      align-items: center;
+  }
+  .aboutWork{
+      font-size: 30px;
+  }
