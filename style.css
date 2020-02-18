@@ -100,8 +100,8 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    border-radius: 50px;
 }
 
 .name {
@@ -144,7 +144,7 @@ a:hover {
 
 .rightBox {
     width: 50%;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -154,7 +154,10 @@ a:hover {
     height: 50px;
     display: flex;
 }
-
+.socialBox a{
+    font-size: 22px;
+    color: black;
+}
 .socialImg {
     width: 45px;
     height: 45px;
@@ -174,19 +177,19 @@ a:hover {
 .skillsListBox {
     margin-top: 30px;
     width: 100%;
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
     justify-content: space-between;
 }
 
 .leftSkillsBox {
     width: 30%;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .rightSkillsBox {
     width: 30%;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .Skills {
@@ -194,13 +197,20 @@ a:hover {
     width: 100%;
     height: 64px;
 }
-
+.Skills p{
+    font-size: 22px; 
+    padding-top: 10px; 
+    padding-left: 30px;
+}
 .softSkillsBox {
     margin-top: 50px;
     width: 70%;
-    min-height: 300px;
+    min-height: 200px;
 }
-
+.softSkills{
+    font-size: 50px; 
+    text-align: center;
+}
 .container {
     margin-top: 50px;
     width: 70%;
@@ -215,14 +225,28 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-
-.languages {
+.education{
+    font-size: 50px; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+.edText1{
+    font-size: 20px;
+}
+.edText2{
+    font-size: 15px;
+}
+.languagesBox {
     width: 40%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
 }
-
+.languages{
+    font-size: 50px; 
+    text-align: center;
+    margin-bottom: 10px;
+}
 .portfolioBlock {
     min-height: 830px;
     font-family: 'Russo One', sans-serif;
@@ -259,7 +283,7 @@ a:hover {
 .box1 img {
     max-width: 100%;
     border-radius: 5px;
-    z-index: 12;
+    z-index: 0;
 }
 
 .box1:hover {
@@ -269,11 +293,12 @@ a:hover {
     box-shadow: 2px 0px 17px 0px rgba(0, 0, 0, 1);
 }
 
-.mw {
+.box1 a {
     display: block;
     position: absolute;
     width: 100%;
-    z-index: 400000;
+    height: 100%;
+    z-index: 1;
 }
 
 .box2 {
@@ -311,14 +336,19 @@ footer {
 }
 
 #topBtn {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/up-arrow-button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border-color: black;
     font-size: 40px;
     position: fixed;
     bottom: 40px;
     right: 20px;
     outline: none;
-  }
+}
 
 /*Social buttons*/
 
@@ -392,4 +422,41 @@ ul li:nth-child(4) a:hover .fa {
 
 ul li:nth-child(5) a:hover .fa {
     color: #e4405f;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    #home{
+        height: 600px;
+    }
+    .mainTextBox, .mainText{
+        height: 400px;
+    }
+    .navMenu a {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    .myName, .myProfession, .hardSkills , .softSkills , .education , .languages , .myWorks {
+        font-size: 30px;
+    }
+    .sayHello, .Skills p , .aboutWork , .socialBox a{
+        font-size: 18px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .edText1{
+        font-size: 16px;
+    }
+    .edText2{
+        font-size: 12px;
+    }
+    .myWorksContainer{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
 }

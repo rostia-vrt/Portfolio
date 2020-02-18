@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 40) {
+        if ($(this).scrollTop() > 60) {
             $('#topBtn').fadeIn();
         } else {
             $('#topBtn').fadeOut();
@@ -21,3 +21,13 @@ $(document).ready(function () {
     });
 });
 
+$('.navMenu').on('click', 'a', function (event) {
+    event.preventDefault();
+    const id = $(this).attr('href');
+    const top = $(id).offset().top;
+    $('.navMenu  a').removeClass('active');
+    $(this).addClass('active')
+    $('html').animate({
+        scrollTop: top
+    }, 1500)
+})
