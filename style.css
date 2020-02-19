@@ -154,10 +154,12 @@ a:hover {
     height: 50px;
     display: flex;
 }
-.socialBox a{
+
+.socialBox a {
     font-size: 22px;
     color: black;
 }
+
 .socialImg {
     width: 45px;
     height: 45px;
@@ -197,20 +199,24 @@ a:hover {
     width: 100%;
     height: 64px;
 }
-.Skills p{
-    font-size: 22px; 
-    padding-top: 10px; 
+
+.Skills p {
+    font-size: 22px;
+    padding-top: 10px;
     padding-left: 30px;
 }
+
 .softSkillsBox {
     margin-top: 50px;
     width: 70%;
     min-height: 200px;
 }
-.softSkills{
-    font-size: 50px; 
+
+.softSkills {
+    font-size: 50px;
     text-align: center;
 }
+
 .container {
     margin-top: 50px;
     width: 70%;
@@ -225,28 +231,34 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-.education{
-    font-size: 50px; 
+
+.education {
+    font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
 }
-.edText1{
+
+.edText1 {
     font-size: 20px;
 }
-.edText2{
+
+.edText2 {
     font-size: 15px;
 }
+
 .languagesBox {
     width: 40%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
 }
-.languages{
-    font-size: 50px; 
+
+.languages {
+    font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
 }
+
 .portfolioBlock {
     min-height: 830px;
     font-family: 'Russo One', sans-serif;
@@ -350,6 +362,7 @@ footer {
     outline: none;
 }
 
+
 /*Social buttons*/
 
 .socialButtons {
@@ -427,36 +440,186 @@ ul li:nth-child(5) a:hover .fa {
 
 @media screen and (max-width:1024px) {
 
-    #home{
+    #home {
         height: 600px;
     }
-    .mainTextBox, .mainText{
+
+    .mainTextBox,
+    .mainText {
         height: 400px;
     }
+
     .navMenu a {
         padding-top: 30px;
         font-size: 20px;
     }
-    .myName, .myProfession, .hardSkills , .softSkills , .education , .languages , .myWorks {
+
+    .myName,
+    .myProfession,
+    .hardSkills,
+    .softSkills,
+    .education,
+    .languages,
+    .myWorks {
         font-size: 30px;
     }
-    .sayHello, .Skills p , .aboutWork , .socialBox a{
+
+    .sayHello,
+    .Skills p,
+    .aboutWork,
+    .socialBox a {
         font-size: 18px;
     }
-    .name{
+
+    .name {
         font-size: 40px;
     }
-    .edText1{
+
+    .edText1 {
         font-size: 16px;
     }
-    .edText2{
+
+    .edText2 {
         font-size: 12px;
     }
-    .myWorksContainer{
+
+    .myWorksContainer {
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width:768px) {
-    
+    .navMenu a {
+        font-size: 14px;
+    }
+
+    .name {
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .whoIam {
+        flex-direction: column;
+    }
+
+    .leftBox,
+    .rightBox {
+        min-height: 150px;
+        width: 100%;
+    }
+
+    .socialBox {
+        justify-content: center;
+    }
+
+    .sayHello {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .hardSkills,
+    .softSkills,
+    .education,
+    .languages,
+    .myWorks {
+        font-size: 25px;
+    }
+
+    .skillsListBox,
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSkillsBox,
+    .rightSkillsBox,
+    .educationBox,
+    .languagesBox {
+        width: 100%;
+    }
+
+    .aboutWork {
+        font-size: 14px;
+    }
+
+    #topBtn {
+        width: 46px;
+        height: 46px;
+    }
 }
+
+@media screen and (max-width:414px) {
+    .navMenu {
+        display: none;
+    }
+
+    .myName,
+    .myProfession {
+        font-size: 24px;
+    }
+    .socialImg{
+        width: 24px;
+        height: 24px;
+    }
+    .socialBox{
+        align-items: center;
+    }
+    .socialBox a {
+        font-size: 12px;
+        padding-top: 8px;
+    }
+    .sayHello{
+        font-size: 12px;
+    }
+    .hardSkills,
+    .softSkills,
+    .education,
+    .languages,
+    .myWorks,
+    .contactMe {
+        font-size: 16px;
+    }
+    .Skills p, .madeBy{
+        font-size: 12px;
+    }
+    .edText1{
+        font-size: 14px;
+    }
+    .edText2{
+        font-size: 12px;
+    }
+    .aboutWork{
+        font-size: 11px;
+    }
+    .portfolioBlock{
+        min-height: 500px;
+    }
+    .information{
+        margin-bottom: 20px;
+    }
+    .myWorks{
+        margin-top: 30px;
+    }
+    .myWorksContainer{
+        margin-top: 0px;
+    }
+    .languagesBox{
+        min-height: 100px;
+    }
+    ul li a {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width:320px) {
+    #topBtn{
+        width: 34px;
+        height: 34px;
+    }
+    .aboutWork{
+        font-size: 8px;
+    }
+    .socialBox a{
+        font-size: 10px;
+    }
+  }
